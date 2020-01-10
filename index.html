@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/src/lightbox/simplelightbox.min.css" />
     <script
       src="https://kit.fontawesome.com/3c3d32c537.js"
       crossorigin="anonymous"
@@ -29,8 +30,7 @@
             <div class="banner__items_text_item">
               <h1>Hello, I'm Andrew Bahuaw</h1>
               <span
-                >UI/UX Designer & Frontend Developer from Victoria, South
-                Africa.</span
+                >UI/UX Designer & Frontend Developer from Lagos, Nigeria.</span
               >
               <button>check portfolio</button>
               <div class="banner__items_text_item_socialmedia">
@@ -94,22 +94,34 @@
     <section>
       <div class="gallery">
         <div class="pic1">
-          <img src="./src/images/agency-work-13.jpg" alt="" />
+          <a href="./src/images/agency-work-13.jpg">
+            <img src="./src/images/agency-work-13.jpg" alt="" />
+          </a>
         </div>
         <div class="pic2">
-          <img src="./src/images/agency-work-08.jpg" alt="" />
+          <a href="/src/images/agency-work-08.jpg">
+            <img src="./src/images/agency-work-08.jpg" alt="" />
+          </a>
         </div>
         <div class="pic3">
-          <img src="./src/images/agency-work-14.jpg" alt="" />
+          <a href="/src/images/agency-work-14.jpg">
+            <img src="./src/images/agency-work-14.jpg" alt="" />
+          </a>
         </div>
         <div class="pic4">
-          <img src="./src/images/agency-work-04.jpg" alt="" />
+          <a href="/src/images/agency-work-04.jpg">
+            <img src="./src/images/agency-work-04.jpg" alt="" />
+          </a>
         </div>
         <div class="pic5">
-          <img src="./src/images/agency-work-02.jpg" alt="" />
+          <a href="/src/images/agency-work-02.jpg">
+            <img src="./src/images/agency-work-02.jpg" alt="" />
+          </a>
         </div>
         <div class="pic6">
-          <img src="./src/images/agency-work-06.jpg" alt="" />
+          <a href="/src/images/agency-work-06.jpg">
+            <img src="./src/images/agency-work-06.jpg" alt="" />
+          </a>
         </div>
       </div>
     </section>
@@ -204,5 +216,15 @@
         </div>
       </div>
     </section>
+
+    <!-- scripts -->
+    <script src="/src/lightbox/jquery-2.1.1.js"></script>
+    <script src="/src/lightbox/simple-lightbox.min.js"></script>
+    <script>
+      $(() => {
+        const gallery = $(".gallery a").simpleLightbox();
+      });
+    </script>
+    <!-- scripts -->
   </body>
 </html>
