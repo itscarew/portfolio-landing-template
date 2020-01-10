@@ -1,0 +1,76 @@
+$primary-pink: #ff1967;
+$color-text: #282828;
+$color-dark: #2b2b2b;
+$color-darker: #181818;
+$color-light: #fff;
+$color-gray: #dcdcdc;
+$color-lighter-gray: #f1f1f1;
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    font-size: 60%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+  color: $color-dark !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  color: $color-dark;
+  border: none;
+}
+
+::placeholder {
+  color: $color-text;
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  position: relative;
+
+  @media screen and (min-width: 0px) and (max-width: 800px) {
+    width: 90%;
+  }
+}

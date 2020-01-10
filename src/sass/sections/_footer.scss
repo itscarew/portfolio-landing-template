@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+  background: rgba($color-gray, 0.4);
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 0;
+
+    @media screen and (min-width: 0px) and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    & h1 {
+      font-size: 4rem;
+
+      @media screen and (min-width: 0px) and (max-width: 800px) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &_copyright {
+      font-size: 1.3rem;
+      color: $color-text;
+
+      @media screen and (min-width: 0px) and (max-width: 800px) {
+        margin-bottom: 2rem;
+      }
+    }
+    &_socialmedia {
+      display: flex;
+      align-items: center;
+      & a {
+        margin-right: 2rem;
+        font-size: 1.4rem;
+        & i {
+          color: $color-dark;
+        }
+      }
+    }
+  }
+}
