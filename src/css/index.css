@@ -129,9 +129,12 @@ button {
           display: flex; }
           .banner__items_text_item_socialmedia a {
             margin-right: 3rem;
-            font-size: 2rem; }
+            font-size: 2rem;
+            transition: all 0.2s; }
             .banner__items_text_item_socialmedia a i {
               color: #2b2b2b; }
+            .banner__items_text_item_socialmedia a:hover {
+              transform: scale(1.8); }
         .banner__items_text_item img {
           width: 100%; }
 
@@ -437,6 +440,9 @@ button {
       align-items: center; }
       .footer__items_socialmedia a {
         margin-right: 2rem;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        transition: all 0.2s; }
         .footer__items_socialmedia a i {
           color: #2b2b2b; }
+        .footer__items_socialmedia a:hover {
+          transform: scale(1.8); }

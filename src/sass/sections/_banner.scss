@@ -96,8 +96,13 @@
           & a {
             margin-right: 3rem;
             font-size: 2rem;
+            transition: all 0.2s;
             & i {
               color: $color-dark;
+            }
+
+            &:hover {
+              transform: scale(1.8);
             }
           }
         }

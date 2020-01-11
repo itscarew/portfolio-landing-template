@@ -33,8 +33,13 @@
       & a {
         margin-right: 2rem;
         font-size: 1.4rem;
+        transition: all 0.2s;
         & i {
           color: $color-dark;
+        }
+
+        &:hover {
+          transform: scale(1.8);
         }
       }
     }
